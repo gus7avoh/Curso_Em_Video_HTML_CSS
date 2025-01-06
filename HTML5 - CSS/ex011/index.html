@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimencionamento de imagens</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    
+    <p>Tente abrir esse site em diferentes aparelhos com resoluçoes diferentes, ou simplesmente altere o dimencionamento da pagina </p>
+
+    <picture>
+        
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="foto grande">
+
+    </picture>
+
+    <h1>Aprendendo a reproduzir audios</h1>
+    <p>Vamos aprender a repriduzir audios em HTML5</p>
+
+   <audio preload="metadata" controls loop>
+
+        <source src="midia/happymistake.mp3" type="audio/mpeg">
+        <source src="midia/happymistake.ogg" type="audio/ogg">
+        <source src="midia/happymistake.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador nao consegue reproduzir audios, clique aqui para download <a href="midia/happymistake.mp3"></a></p>
+
+   </audio>
+
+</body>
+</html>

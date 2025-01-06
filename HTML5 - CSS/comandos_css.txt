@@ -1,0 +1,106 @@
+style - na Head do arqusivo HTML
+body {} - nao eh exenciamente um comando porem eh exencial
+background-color - cor do back
+
+é possivel adicioanr o style pontualmente dentro de um tag html, e nessa fazer modificações na propria tag
+
+para fazer mudaças em tags que vao se aplicar em todas as tags do genero no codigo, devemos adicionar o style na head e criar o campo mark após isso setar sua configuração
+
+para abrir as configuracoes globais da css devemos abrir *{}
+
+degrade css 
+
+    body{
+        background-image: linear-gradient(to top, blue, #9956F6 ) ;
+    }
+
+    - colocar como se fosse em uma imagem
+    - selecioar o gradiente linear-gradient
+    -selecionar adirecao do gradiente
+    -selecionar a passagem de cores
+
+    body{
+        background-image: linear-gradient(45deg, blue, #9956F6, rgb(255, 141, 251) ) ;
+
+        background-attachment: fixed;
+    }
+
+    - tambem é possivel colocar angulaçao 
+    - background-attachment: fixed; fixa a barra de rolagem no tamanho da imagem 
+
+    body{
+        background-image: radial-gradient(circle, blue, #9956F6, rgb(255, 141, 251) ) ;
+
+        background-attachment: fixed;
+    }
+
+    - radial-gradient leva em cosideraçao os radianos de forma nao linear, sendo assim podendo formar formas geometricas
+
+
+
+Texto
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+
+            -Fontes familiares que vaos er buscadas em ordem peli navegador 
+
+        font-family: serif;
+
+            -fontes serifadas aleatorias
+
+        font-family: sans-serif;
+
+            -Fontes nao serifadas aleatorias
+
+        font-family: monospace
+            -Fontes aleatorias mono espacadas
+    }
+
+    Medidas recomendadas pelo w3s
+
+    font-size: 10px; pixels
+    font-size: 10em; tamanho baseado na letra m
+
+
+    font: italic bolder 3em 'Work Sans', sans-serif;
+        - forma de condensar a declaracao de letras seguindo a ordem de: font-style, font-weight, font-size, font-family
+
+
+    text-indent: 30px; -  tab inicial para alinahmanto de paragrafos
+
+
+    text-align: center; - tipo de organizacao do texto.
+
+
+    div:hover{
+        background-color: aqua;
+    }
+        : = psceudo classe
+        hover = ao passar o mouse 
+
+
+Exemplo de hover
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div > p{
+        display: none;
+    }
+
+    div:hover > p{
+        display: block;
+        color: white;
+        background-color: red;
+    }
+
+    div:hover{
+        color: red;
+    }
+
+    - Criei uma eranca onde o p eh dependente da div e o paragrafo nao deveria aparescer
+    - criei uma condicao onde quando eu passase o mouse sobre a div o texto apareceria com o fundo vermelho e letra branca
+
+    

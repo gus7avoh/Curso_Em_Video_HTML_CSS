@@ -1,0 +1,11 @@
+é importante redimencionar a imagem para reduzir a demora para carregar o conteudo do site.
+
+
+ctrl shift p - acionar painel e seleciona wrap with abbriviation, para elecionar uam parte e adicionar uma tag nela 
+
+../ - é um comando em linux para indicar voltar para a pagina anterior
+./ -  indica que esta acessando a mesma pasta
+
+
+HTML id == CSS #
+HTML class == CSS .

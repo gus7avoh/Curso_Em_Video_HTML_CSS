@@ -1,0 +1,101 @@
+FORMATANDO TEXTO
+
+Escrever
+
+  h1 - titulo
+  h1,h2... - ate h6 hierarquia de titulos
+  p - paragrafo
+
+formataçoes 
+
+  hr - horizontal row
+  br - breack row
+  link - tem pra varias coisa eu usei para o favcon para trocar a img da pg
+  p como lorem - criar textos de exemplo em latin 
+  addres -  tag para se fererir a endereco
+  b - tag para negrito 
+  strong - tag que coloca em negrito e da significado ao local
+  i - coloca em italico
+  em - tag para colocar em italico e adicionar significado ao local
+  mark - marca texto
+  del - marcar texto com uma linha central adicionando sentido ao local
+  ins - sublinhar o texto adicionando sentido ao local
+  small - coloca o texto com as letras menores, nao entrou em desuso provavelmente pelas letras miudas em contratos que tem um sentido justificado
+  sup - eleva uma coisa
+  sub - abaixa uma letra 
+  code - muda a formatacao das letras para um expacamento igualitario, isso facilita a visuaslizacao de todas as letra do texto, assim como necessario em um codigo
+  pre - tag que considera ate os expacos presentes no codigo
+  abbr - colocar significado nas abreviacoes
+
+Listas
+  ol - ordenated list, tag para iniciar uma lsita ordenada, aceita type para mudar o tipo de organizaçao
+  li - list iten, o item da lista deve estar contido nessa tag
+  ul - lista não ordenada, é a lista com bolinhas
+  dl - Linguagem de marcação, fica em cima
+  dd - Linguagem de definição, em baixo 
+
+
+links
+
+  a - ancora
+  target="_self" - indicara que o link nao deve abrir uma nova aba
+  target="_blank" -  indicar que o link deve abrir uma nova aba
+  rel="external" - indicar para o google que o link vai levalo para uma pagina externa 
+  rel="prev" - indicar para o google quem é a pg anterior 
+  rel="next" - indicar para o google quem é a proxima pg
+  rel="nofollow" - indicar para o mecanismo de busca que aquele link não faz parte do seu site e voce não se responsabiliza pelo seu conteudo.
+  download="cronograma.zip" - criar um link para download direto
+  type="application/zip" - descrever o tipo de arquevo a ser instalado
+
+
+imagens
+
+  <picture>     
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="foto grande">
+  </picture>
+
+  img - carregar img
+  picture - tag que entende que vai receber uma imagem, essa tag é utilizada para modificar ela
+  source - tag que aceita dimencionamento de imagem( Outras coisas que eu nao abordei ainda tambem) trocar a analise de px para max e colocar o tamanho a ser analisado, ex; 1000px lembrar de colocar o nome da imagem a ser alterada e o formato do arquivo.
+
+
+audios 
+
+  forma simples 
+      <audio src="midia/happymistake.mp3" controls autoplay></audio>
+
+  audio - tag para adicionar audio
+  controls - adiciona o play ao navegador para que o usuario possa controlar
+  autoplay - teoricamente para ja startar tocando
+
+  forma correta
+    <audio preload="metadata" controls loop>
+      <source src="midia/happymistake.mp3" type="audio/mpeg">
+      <source src="midia/happymistake.ogg" type="audio/ogg">
+      <source src="midia/happymistake.wav" type="audio/wav">
+      <p>Infelizmente o seu navegador nao consegue reproduzir audios, clique aqui para download <a href="midia/happymistake.mp3"></a></p>
+    </audio>
+
+  audio - tirar o src do audio
+  preload - definir configuracoes de carregamento, metadata so carrega os dados e nao o arquivo inteiro, auto eh perigoso para arquivos grandes uma vez que vai carregar todos os audios quando o site abrir
+  loop - colocar o audio em loop
+  source src - selecionar este comando para audio(eh diferente do de imagem)
+  mp3, ogg, wav - tipos de formatos de audio, a organizacao dos sources funcionam como um if elif para tentar todos os formatos, vale lembrar que voce deve ter todos os formatos instalados, a tag de download no final serve para caso o navegador nao reproduza audios. (Evitar arquivos wave, por serem muito pesados) 
+
+videos
+
+    <video controls width="500" poster="images/limoes-capa.png">
+        <source src="videos/meu-video.mp4" type="video.mp4">
+        <source src="videos/meu-video.ogv" type="video/ogv">
+        <source src="videos/meu-video.webm" type="video/webm">
+        <source src="videos/meu-video.m4v" type="video/m4v">
+        <p>O seu navegador nao pode reproduzir videos, baixe-o aqui <a href="videos/meu-video.mp4"></a></p>
+    </video>
+
+    video - tag para alocar videos
+    width - define a largura maxima para os videos em reproduçao na tag
+    controls - adiciona as configuraçoes padroes de play para o video 
+    poster - adiciona uma imagem capa par ao video 
+    source src - mesma tag utilizada para audios e imagens, é importante adicionat todo tipo de formato para nao ter problemas com determinados navegadores
