@@ -20,6 +20,7 @@
     header > nav{
         background-color: lightgray;
         padding: 3px;
+        box-shadow: 1px 1px 1px black;
     }
     nav > a {
         color: black;
@@ -29,7 +30,7 @@
     }
 
     nav > a:hover{
-        color: yellow;
+        color: burlywood ;
     }
 
     article{
@@ -55,6 +56,28 @@
         margin: 0px;
         border-radius: 10px;
     }
+
+    footer > p {
+        margin: 0px;
+    }
+
+    #ball {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50%; /* Melhor forma de fazer um círculo */
+}
+
+
+
+
 </style>
 <body>
     <header> 
@@ -85,5 +108,7 @@
     <footer>
         <p>Devolopment by Gustavo</p>
     </footer>
+
+    <div id="ball"> onde eu estou?</div>
 </body>
 </html>
